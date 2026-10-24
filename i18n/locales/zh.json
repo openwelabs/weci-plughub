@@ -48,5 +48,28 @@
     "meta": "其他信息",
     "repository": "源代码仓库",
     "versions": "历史版本"
+  },
+  "upload": {
+    "fileLabel": "插件 zip 包（≤5MB，含 manifest.json）",
+    "repository": "源码仓库（可选）",
+    "keywords": "关键词（可选）",
+    "keywordsHint": "逗号分隔，例如 weather, 天气",
+    "submit": "校验并发布",
+    "success": "发布成功",
+    "failed": "发布失败"
+  },
+  "me": {
+    "title": "我的插件",
+    "empty": "还没有发布过插件",
+    "downloads": "次下载",
+    "active": "正常",
+    "delisted": "已下架",
+    "newVersion": "上传新版本",
+    "delist": "下架",
+    "delistConfirmTitle": "下架插件",
+    "delistConfirm": "确定下架 {name} 吗？下架后它将不再出现在列表和详情页。",
+    "versionFor": "为 {name} 上传新版本",
+    "success": "操作成功",
+    "failed": "操作失败"
   }
 }

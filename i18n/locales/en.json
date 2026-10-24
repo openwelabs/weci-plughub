@@ -48,5 +48,28 @@
     "meta": "More info",
     "repository": "Source repository",
     "versions": "Version history"
+  },
+  "upload": {
+    "fileLabel": "Plugin zip (≤5MB, must contain manifest.json)",
+    "repository": "Source repository (optional)",
+    "keywords": "Keywords (optional)",
+    "keywordsHint": "Comma separated, e.g. weather, api",
+    "submit": "Validate & publish",
+    "success": "Published successfully",
+    "failed": "Publish failed"
+  },
+  "me": {
+    "title": "My plugins",
+    "empty": "You have not published any plugins yet",
+    "downloads": "downloads",
+    "active": "Active",
+    "delisted": "Delisted",
+    "newVersion": "New version",
+    "delist": "Delist",
+    "delistConfirmTitle": "Delist plugin",
+    "delistConfirm": "Delist {name}? It will disappear from the list and detail pages.",
+    "versionFor": "Upload a new version of {name}",
+    "success": "Done",
+    "failed": "Operation failed"
   }
 }
