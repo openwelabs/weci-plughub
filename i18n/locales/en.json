@@ -5,6 +5,12 @@
     "guide": "Submit Guide",
     "upload": "Publish"
   },
+  "auth": {
+    "login": "Sign in with GitHub",
+    "logout": "Sign out",
+    "myPlugins": "My plugins",
+    "loginRequired": "Please sign in with GitHub first"
+  },
   "footer": {
     "disclaimer": "A community-driven plugin hub — not the official WeCi website",
     "project": "Upstream project",

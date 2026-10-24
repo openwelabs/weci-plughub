@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  modules: ['@nuxthub/core', '@nuxt/ui', '@nuxtjs/i18n'],
+  modules: ['@nuxthub/core', '@nuxt/ui', '@nuxtjs/i18n', 'nuxt-auth-utils'],
 
   devtools: { enabled: false },
 
@@ -22,6 +22,22 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: 'cloudflare-pages'
+  },
+
+  runtimeConfig: {
+    // Comma-separated GitHub numeric user IDs with admin rights
+    adminGithubIds: '',
+    session: {
+      // NUXT_SESSION_PASSWORD (>= 32 chars)
+      password: ''
+    },
+    oauth: {
+      github: {
+        // NUXT_OAUTH_GITHUB_CLIENT_ID / NUXT_OAUTH_GITHUB_CLIENT_SECRET
+        clientId: '',
+        clientSecret: ''
+      }
+    }
   },
 
   compatibilityDate: '2025-10-01'

@@ -5,6 +5,12 @@
     "guide": "投稿指南",
     "upload": "发布插件"
   },
+  "auth": {
+    "login": "使用 GitHub 登录",
+    "logout": "退出登录",
+    "myPlugins": "我的插件",
+    "loginRequired": "请先使用 GitHub 登录"
+  },
   "footer": {
     "disclaimer": "社区驱动的插件中心，非 WeCi 官方网站",
     "project": "上游项目",
