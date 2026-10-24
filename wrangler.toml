@@ -1,0 +1,17 @@
+# Cloudflare Pages configuration.
+# Bindings can also be managed in the Pages dashboard (Settings -> Bindings).
+# To declare them here instead, uncomment and fill in your own resource IDs:
+#
+# name = "weci-plughub"
+# pages_build_output_dir = "dist"
+#
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "weci-plughub"
+# database_id = "<your-d1-database-id>"
+#
+# [[r2_buckets]]
+# binding = "BLOB"
+# bucket_name = "weci-plughub"
+
+compatibility_date = "2025-10-01"
