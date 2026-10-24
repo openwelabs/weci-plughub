@@ -26,6 +26,27 @@
     "heroTitle": "发现并分享 WeCi 插件",
     "heroSubtitle": "社区驱动的 WeCi Agent 插件集散地。浏览、下载，或发布你自己的插件。",
     "browse": "浏览插件",
-    "submit": "发布插件"
+    "submit": "发布插件",
+    "newest": "最新发布",
+    "popular": "热门下载",
+    "viewAll": "查看全部"
+  },
+  "plugins": {
+    "searchPlaceholder": "搜索插件名称、简介或关键词…",
+    "sortNewest": "最新发布",
+    "sortDownloads": "下载最多",
+    "empty": "没有找到插件，换个关键词试试？"
+  },
+  "plugin": {
+    "download": "下载",
+    "installTitle": "安装方法",
+    "installStep1": "下载 zip 并解压到本地目录",
+    "installStep2": "在 WeCi 中执行：",
+    "installStep3": "重启 WeCi，插件工具即自动出现在 Agent 中",
+    "permissions": "权限声明",
+    "noPermissions": "该插件未声明任何特殊权限",
+    "meta": "其他信息",
+    "repository": "源代码仓库",
+    "versions": "历史版本"
   }
 }

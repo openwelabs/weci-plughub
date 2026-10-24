@@ -26,6 +26,27 @@
     "heroTitle": "Discover and share WeCi plugins",
     "heroSubtitle": "A community-driven hub for WeCi Agent plugins. Browse, download, or publish your own.",
     "browse": "Browse plugins",
-    "submit": "Publish a plugin"
+    "submit": "Publish a plugin",
+    "newest": "Newest",
+    "popular": "Most downloaded",
+    "viewAll": "View all"
+  },
+  "plugins": {
+    "searchPlaceholder": "Search by name, summary or keyword…",
+    "sortNewest": "Newest",
+    "sortDownloads": "Most downloaded",
+    "empty": "No plugins found. Try another keyword?"
+  },
+  "plugin": {
+    "download": "Download",
+    "installTitle": "Installation",
+    "installStep1": "Download the zip and extract it to a local directory",
+    "installStep2": "Run in WeCi:",
+    "installStep3": "Restart WeCi — the plugin tools appear in the Agent automatically",
+    "permissions": "Declared permissions",
+    "noPermissions": "This plugin declares no special permissions",
+    "meta": "More info",
+    "repository": "Source repository",
+    "versions": "Version history"
   }
 }
