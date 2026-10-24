@@ -1,0 +1,25 @@
+{
+  "brand": "WeCi 插件中心",
+  "nav": {
+    "plugins": "插件",
+    "guide": "投稿指南",
+    "upload": "发布插件"
+  },
+  "footer": {
+    "disclaimer": "社区驱动的插件中心，非 WeCi 官方网站",
+    "project": "上游项目",
+    "hubSource": "本站源码"
+  },
+  "common": {
+    "search": "搜索",
+    "loading": "加载中…",
+    "cancel": "取消",
+    "confirm": "确认"
+  },
+  "home": {
+    "heroTitle": "发现并分享 WeCi 插件",
+    "heroSubtitle": "社区驱动的 WeCi Agent 插件集散地。浏览、下载，或发布你自己的插件。",
+    "browse": "浏览插件",
+    "submit": "发布插件"
+  }
+}

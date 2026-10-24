@@ -1,0 +1,25 @@
+{
+  "brand": "WeCi Plugin Hub",
+  "nav": {
+    "plugins": "Plugins",
+    "guide": "Submit Guide",
+    "upload": "Publish"
+  },
+  "footer": {
+    "disclaimer": "A community-driven plugin hub — not the official WeCi website",
+    "project": "Upstream project",
+    "hubSource": "Hub source code"
+  },
+  "common": {
+    "search": "Search",
+    "loading": "Loading…",
+    "cancel": "Cancel",
+    "confirm": "Confirm"
+  },
+  "home": {
+    "heroTitle": "Discover and share WeCi plugins",
+    "heroSubtitle": "A community-driven hub for WeCi Agent plugins. Browse, download, or publish your own.",
+    "browse": "Browse plugins",
+    "submit": "Publish a plugin"
+  }
+}

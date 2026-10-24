@@ -1,5 +1,7 @@
 <template>
-  <div>
-    WeCi Plugin Hub
-  </div>
+  <UApp>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </UApp>
 </template>
