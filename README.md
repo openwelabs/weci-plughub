@@ -16,7 +16,7 @@ The community plugin hub for [WeCi](https://github.com/openwelabs/weci) — brow
 ## Tech stack
 
 - [Nuxt 4](https://nuxt.com) + [Nuxt UI](https://ui.nuxt.com) + [@nuxtjs/i18n](https://i18n.nuxtjs.org)
-- [NuxtHub](https://hub.nuxt.com) (`@nuxthub/core`): Cloudflare D1 (database) and R2 (blob storage)
+- [NuxtHub](https://hub.nuxt.com) `@nuxthub/core` 0.9 — `hubDatabase()` (D1) and `hubBlob()` (R2) server functions
 - [nuxt-auth-utils](https://github.com/atinux/nuxt-auth-utils): GitHub OAuth
 - Nitro preset `cloudflare-pages`
 
@@ -47,8 +47,15 @@ Environment variables (see `.env.example`):
 3. Add bindings in Pages settings:
    - D1 database → binding name `DB`
    - R2 bucket → binding name `BLOB`
-4. Set the environment variables listed above
-5. Apply database migrations: `npx nuxthub database migrate` (or run the SQL in `server/database/migrations/`)
+4. Set the environment variables listed above (Production **and** Preview). Generate the session secret with
+   `openssl rand -base64 32`. Changing variables requires a redeploy.
+5. Apply database migrations to the remote D1 database:
+
+   ```bash
+   npx wrangler d1 execute <database-name> --remote --file=server/database/migrations/0001_init.sql
+   ```
+
+   Without this step every API request fails with `no such table: plugins`.
 
 ## Project structure
 
@@ -107,8 +114,14 @@ NuxtHub 会在本地模拟 D1 与 R2（`.data/hub`），开发阶段无需 Cloud
 1. 在 Cloudflare Pages 连接本仓库
 2. 构建命令 `pnpm build`，输出目录 `dist`
 3. 在 Pages 设置中添加绑定：D1 数据库（绑定名 `DB`）、R2 存储桶（绑定名 `BLOB`）
-4. 配置上述环境变量
-5. 执行数据库迁移：`npx nuxthub database migrate`（或手动执行 `server/database/migrations/` 中的 SQL）
+4. 配置上述环境变量（Production 与 Preview 都要），会话密钥可用 `openssl rand -base64 32` 生成；修改后需重新部署
+5. 将迁移应用到远程 D1 数据库：
+
+   ```bash
+   npx wrangler d1 execute <数据库名> --remote --file=server/database/migrations/0001_init.sql
+   ```
+
+   缺少这一步时所有 API 都会报 `no such table: plugins`。
 
 ## 贡献
 
