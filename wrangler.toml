@@ -1,9 +1,12 @@
 # Cloudflare Pages configuration.
 # Once this file is present, bindings are managed HERE ONLY —
 # the dashboard (Settings -> Bindings) is disabled for this project.
+# NOTE: top-level keys must stay ABOVE the [[table]] sections (TOML rule).
 
 name = "plughub"
 pages_build_output_dir = "dist"
+compatibility_date = "2025-10-01"
+compatibility_flags = ["nodejs_compat"]
 
 [[d1_databases]]
 binding = "DB"
@@ -13,6 +16,3 @@ database_id = "e1ffe1ff-d70d-472b-92ec-965840ac4959"
 [[r2_buckets]]
 binding = "BLOB"
 bucket_name = "plughub"
-
-compatibility_date = "2025-10-01"
-compatibility_flags = ["nodejs_compat"]
